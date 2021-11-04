@@ -1,0 +1,20 @@
+.form__group-correct .form__group-input .form__validation {
+	color: $perfectInput;
+	opacity: 1;
+}
+
+.form__group-incorrect .form__group-input .form__validation {
+	color: $alertInput;
+	opacity: 1;
+}
+
+.form__group-incorrect .form__group-label {
+	color: $alertInput;
+}
+
+.form__group-incorrect .form__group-input .form__input {
+	border: 2px solid $alertInput;
+	&:focus {
+		border: 2px solid $alertInput;
+	}
+}

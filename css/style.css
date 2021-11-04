@@ -1,0 +1,135 @@
+.form__input {
+  margin: 9px 0 9px 0;
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: #efefef;
+  border-radius: 5px;
+  font: normal 400 1rem/1.6181rem "Poppins", sans-serif;
+  line-height: 45px;
+  border: 3px solid transparent;
+  transition: 0.3s ease all;
+  padding: 0 40px 0 10px;
+}
+.form__input::placeholder {
+  color: #a4a4a4;
+}
+.form__input:focus {
+  border: 3px solid #185adb;
+  outline: none;
+  box-shadow: 3px 0 30px rgba(164, 164, 164, 0.4);
+}
+
+.form__group .form__group-label {
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px;
+}
+.form__group .form__group-error {
+  font: normal 400 0.875rem/1.4156rem "Poppins", sans-serif;
+  margin-bottom: 9px;
+  display: none;
+}
+.form__group .form__group-error--active {
+  display: block;
+}
+.form__group .form__group-input {
+  position: relative;
+}
+.form__group .form__group-input .form__validation {
+  position: absolute;
+  color: #bb2929;
+  bottom: 15px;
+  right: 10px;
+  font-size: 16px;
+  opacity: 0;
+  z-index: 100;
+}
+
+.form__group-button {
+  background: #ffc947;
+  color: #0a1931;
+  font: normal 400 1.25rem/1.875rem "Poppins", sans-serif;
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.1s ease all;
+}
+.form__group-button:hover {
+  box-shadow: 3px 0 30px #a3a3a3;
+}
+
+.wrapper {
+  max-width: 500px;
+  padding: 0 16px;
+  margin: 35px auto 40px auto;
+}
+
+.form__group-correct .form__group-input .form__validation {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.form__group-incorrect .form__group-input .form__validation {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.form__group-incorrect .form__group-label {
+  color: #bb2929;
+}
+
+.form__group-incorrect .form__group-input .form__input {
+  border: 2px solid #bb2929;
+}
+.form__group-incorrect .form__group-input .form__input:focus {
+  border: 2px solid #bb2929;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+body {
+  background: #0a1931;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #efefef;
+}
+body h1 {
+  margin: 0;
+  padding: 0;
+}
+body .title {
+  font: normal 700 1.5rem/2.4269rem "Poppins", sans-serif;
+  text-align: center;
+  margin: 0 0 13px 0;
+}
+body .list {
+  text-align: start;
+  margin-bottom: 35px;
+}
+body .list .list__item {
+  font: normal 400 1rem/1.6181rem "Poppins", sans-serif;
+}
+body .form__group-img {
+  background-image: url("../img/sol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 230px;
+  height: 230px;
+  border-radius: 5px;
+  margin: 0 auto 9px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

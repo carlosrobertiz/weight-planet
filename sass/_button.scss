@@ -1,0 +1,16 @@
+.form__group-button {
+	background: $color2;
+	color: $color4;
+	font: $button2;
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.1s ease all;
+	&:hover {
+		box-shadow: 3px 0 30px $buttonShadow;
+	}
+}
