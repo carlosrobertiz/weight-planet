@@ -60,12 +60,12 @@ function calculateWeight(event) {
   event.preventDefault();
 
   if ($mass.value == '') {
-    /* Swal.fire({
+    Swal.fire({
       icon: 'error',
       title: 'Oops...',
       text: 'Recuerda ingresar tu peso!',
       confirmButtonColor: '#ffc947'
-    }); */
+    });
   } else if (Validar.masa) {
     switch ($selectPlanet.value) {
       case 'Mercurio':
@@ -113,12 +113,12 @@ function result(gravedad, nombre) {
   let content = (weight * gravedad) / Gravity.tierra;
   $icon.classList.remove('fa-check-circle');
   console.log(nombre);
-  /* Swal.fire({
+  Swal.fire({
     title: `${nombre}`,
     text: `Tu peso es de ${content.toFixed(2)} kg`,
     icon: 'success',
     confirmButtonColor: '#ffc947'
-  }); */
+  });
 }
 
 // Mostrar imagenes
