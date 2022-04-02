@@ -60,12 +60,12 @@ function calculateWeight(event) {
   event.preventDefault();
 
   if ($mass.value == '') {
-    Swal.fire({
+    /* Swal.fire({
       icon: 'error',
       title: 'Oops...',
       text: 'Recuerda ingresar tu peso!',
       confirmButtonColor: '#ffc947'
-    });
+    }); */
   } else if (Validar.masa) {
     switch ($selectPlanet.value) {
       case 'Mercurio':
@@ -112,12 +112,13 @@ function result(gravedad, nombre) {
   let weight = parseInt($mass.value);
   let content = (weight * gravedad) / Gravity.tierra;
   $icon.classList.remove('fa-check-circle');
-  Swal.fire({
+  console.log(nombre);
+  /* Swal.fire({
     title: `${nombre}`,
     text: `Tu peso es de ${content.toFixed(2)} kg`,
     icon: 'success',
     confirmButtonColor: '#ffc947'
-  });
+  }); */
 }
 
 // Mostrar imagenes
@@ -126,63 +127,43 @@ $selectPlanet.addEventListener('input', showPicture);
 function showPicture() {
   switch ($selectPlanet.value) {
     case 'Mercurio':
-      const imgMercurio = new Image();
-      imgMercurio.src = '../img/mercurio.jpg';
-      $contentImg.innerHTML = imgMercurio.outerHTML;
+      $contentImg.innerHTML = `<img src="img/mercurio.jpg" alt="Mercurio">`;
       break;
 
     case 'Venus':
-      const imgVenus = new Image();
-      imgVenus.src = '../img/venus.jpg';
-      $contentImg.innerHTML = imgVenus.outerHTML;
+      $contentImg.innerHTML = `<img src="img/venus.jpg" alt="Venus">`;
       break;
 
     case 'Luna':
-      const imgLuna = new Image();
-      imgLuna.src = '../img/luna.jpg';
-      $contentImg.innerHTML = imgLuna.outerHTML;
+      $contentImg.innerHTML = `<img src="img/luna.jpg" alt="Luna">`;
       break;
 
     case 'Marte':
-      const imgMarte = new Image();
-      imgMarte.src = '../img/marte.jpg';
-      $contentImg.innerHTML = imgMarte.outerHTML;
+      $contentImg.innerHTML = `<img src="img/marte.jpg" alt="Marte">`;
       break;
 
     case 'Júpiter':
-      const imgJupiter = new Image();
-      imgJupiter.src = '../img/jupiter.jpg';
-      $contentImg.innerHTML = imgJupiter.outerHTML;
+      $contentImg.innerHTML = `<img src="img/jupiter.jpg" alt="Júpiter">`;
       break;
 
     case 'Saturno':
-      const imgSaturno = new Image();
-      imgSaturno.src = '../img/saturno.jpg';
-      $contentImg.innerHTML = imgSaturno.outerHTML;
+      $contentImg.innerHTML = `<img src="img/saturno.jpg" alt="Saturno">`;
       break;
 
     case 'Urano':
-      const imgUrano = new Image();
-      imgUrano.src = '../img/urano.jpg';
-      $contentImg.innerHTML = imgUrano.outerHTML;
+      $contentImg.innerHTML = `<img src="img/urano.jpg" alt="Urano">`;
       break;
 
     case 'Neptuno':
-      const imgNeptuno = new Image();
-      imgNeptuno.src = '../img/neptuno.jpg';
-      $contentImg.innerHTML = imgNeptuno.outerHTML;
+      $contentImg.innerHTML = `<img src="img/neptuno.jpg" alt="Neptuno">`;
       break;
 
     case 'Plutón':
-      const imgPluton = new Image();
-      imgPluton.src = '../img/pluton.jpg';
-      $contentImg.innerHTML = imgPluton.outerHTML;
+      $contentImg.innerHTML = `<img src="img/pluton.jpg" alt="Plutón">`;
       break;
 
     default:
-      const imgSol = new Image();
-      imgSol.src = '../img/sol.jpg';
-      $contentImg.innerHTML = imgSol.outerHTML;
+      $contentImg.innerHTML = `<img src="img/sol.jpg" alt="Sol">`;
       break;
   }
 }

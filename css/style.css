@@ -122,10 +122,6 @@ body .list .list__item {
   font: normal 400 1rem/1.6181rem "Poppins", sans-serif;
 }
 body .form__group-img {
-  /* background-image: url('../img/sol.jpg'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   width: 230px;
   height: 230px;
   border-radius: 5px;
