@@ -4,7 +4,7 @@ const $formGroup = document.querySelector('.form__group-mass');
 const $mass = document.getElementById('mass');
 const $icon = document.querySelector('.form__validation');
 const $error = document.querySelector('.form__group-error');
-const $selectPlanet = document.getElementById('planet');
+let $selectPlanet = document.getElementById('planet');
 const $title = document.getElementById('title');
 let $contentImg = document.getElementById('content-img');
 
@@ -138,43 +138,63 @@ $selectPlanet.addEventListener('input', showPicture);
 function showPicture() {
   switch ($selectPlanet.value) {
     case 'Mercurio':
-      $contentImg = new Image().src = Planets.mercurio;
+      const imgMercurio = new Image();
+      imgMercurio.src = '../img/mercurio.jpg';
+      $contentImg.innerHTML = imgMercurio.outerHTML;
       break;
 
     case 'Venus':
-      $contentImg.style.backgroundImage = Planets.venus;
+      const imgVenus = new Image();
+      imgVenus.src = '../img/venus.jpg';
+      $contentImg.innerHTML = imgVenus.outerHTML;
       break;
 
     case 'Luna':
-      $contentImg.style.backgroundImage = Planets.luna;
+      const imgLuna = new Image();
+      imgLuna.src = '../img/luna.jpg';
+      $contentImg.innerHTML = imgLuna.outerHTML;
       break;
 
     case 'Marte':
-      $contentImg.style.backgroundImage = Planets.marte;
+      const imgMarte = new Image();
+      imgMarte.src = '../img/marte.jpg';
+      $contentImg.innerHTML = imgMarte.outerHTML;
       break;
 
     case 'Júpiter':
-      $contentImg.style.backgroundImage = Planets.jupiter;
+      const imgJupiter = new Image();
+      imgJupiter.src = '../img/jupiter.jpg';
+      $contentImg.innerHTML = imgJupiter.outerHTML;
       break;
 
     case 'Saturno':
-      $contentImg.style.backgroundImage = Planets.saturno;
+      const imgSaturno = new Image();
+      imgSaturno.src = '../img/saturno.jpg';
+      $contentImg.innerHTML = imgSaturno.outerHTML;
       break;
 
     case 'Urano':
-      $contentImg.style.backgroundImage = Planets.urano;
+      const imgUrano = new Image();
+      imgUrano.src = '../img/urano.jpg';
+      $contentImg.innerHTML = imgUrano.outerHTML;
       break;
 
     case 'Neptuno':
-      $contentImg.style.backgroundImage = Planets.neptuno;
+      const imgNeptuno = new Image();
+      imgNeptuno.src = '../img/neptuno.jpg';
+      $contentImg.innerHTML = imgNeptuno.outerHTML;
       break;
 
     case 'Plutón':
-      $contentImg.style.backgroundImage = Planets.pluton;
+      const imgPluton = new Image();
+      imgPluton.src = '../img/pluton.jpg';
+      $contentImg.innerHTML = imgPluton.outerHTML;
       break;
 
     default:
-      $contentImg.style.backgroundImage = Planets.sol;
+      const imgSol = new Image();
+      imgSol.src = '../img/sol.jpg';
+      $contentImg.innerHTML = imgSol.outerHTML;
       break;
   }
 }

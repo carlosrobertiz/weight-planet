@@ -6,36 +6,36 @@
 @import 'particles';
 
 body {
-	background: $color4;
-	background-size: cover;
-	font-family: $fontPoppins;
-	font-size: 16px;
-	color: $color1;
+  background: $color4;
+  background-size: cover;
+  font-family: $fontPoppins;
+  font-size: 16px;
+  color: $color1;
 
-	h1 {
-		margin: 0;
-		padding: 0;
-	}
-	.title {
-		font: $headline5;
-		text-align: center;
-		margin: 0 0 13px 0;
-	}
-	.list {
-		text-align: start;
-		margin-bottom: 35px;
-		.list__item {
-			font: $body1;
-		}
-	}
-	.form__group-img {
-		background-image: url('../img/sol.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		width: 230px;
-		height: 230px;
-		border-radius: 5px;
-		margin: 0 auto 9px auto;
-	}
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    font: $headline5;
+    text-align: center;
+    margin: 0 0 13px 0;
+  }
+  .list {
+    text-align: start;
+    margin-bottom: 35px;
+    .list__item {
+      font: $body1;
+    }
+  }
+  .form__group-img {
+    /* background-image: url('../img/sol.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 0 auto 9px auto;
+  }
 }
