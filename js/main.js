@@ -112,7 +112,6 @@ function result(gravedad, nombre) {
   let weight = parseInt($mass.value);
   let content = (weight * gravedad) / Gravity.tierra;
   $icon.classList.remove('fa-check-circle');
-  console.log(nombre);
   Swal.fire({
     title: `${nombre}`,
     text: `Tu peso es de ${content.toFixed(2)} kg`,
