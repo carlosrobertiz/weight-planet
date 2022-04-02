@@ -22,18 +22,6 @@ const Gravity = {
   sol: 274
 };
 
-const Planets = {
-  mercurio: 'url(../img/mercurio.jpg)',
-  venus: 'url(../img/venus.jpg)',
-  marte: 'url(../img/marte.jpg)',
-  jupiter: 'url(../img/jupiter.jpg)',
-  saturno: 'url(../img/saturno.jpg)',
-  urano: 'url(../img/urano.jpg)',
-  neptuno: 'url(../img/neptuno.jpg)',
-  luna: 'url(../img/luna.jpg)',
-  sol: 'url(../img/sol.jpg)'
-};
-
 const Expressions = {
   masa: /^\d{1,3}$/ // 1 a 3 numeros.
 };
