@@ -9,7 +9,7 @@ Esta es una pequeña aplicación que utiliza JavaScript que te permitirá conoce
 
 ## Mobile
 
-<img width="200" src="./design/mobil.png" />
+<img width="400" src="./design/mobil.png" />
 
 ## Créditos
 
