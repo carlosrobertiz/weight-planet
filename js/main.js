@@ -1,5 +1,4 @@
 'use strict';
-
 // Selecciones
 const $form = document.getElementById('form');
 const $formGroup = document.querySelector('.form__group-mass');
