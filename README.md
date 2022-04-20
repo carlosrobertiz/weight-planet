@@ -5,7 +5,7 @@ Esta es una pequeña aplicación que utiliza JavaScript que te permitirá conoce
 
 ## Desktop
 
-<img  src="./design/desktop.png" />
+<img width="400" src="./design/desktop.png" />
 
 ## Mobile
 
