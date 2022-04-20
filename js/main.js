@@ -128,43 +128,43 @@ $selectPlanet.addEventListener('input', showPicture);
 function showPicture() {
   switch ($selectPlanet.value) {
     case 'Mercurio':
-      $contentImg.innerHTML = `<img src="img/mercurio.jpg" alt="Mercurio">`;
+      $contentImg.innerHTML = `<img src="img/mercurio.png" alt="Mercurio">`;
       break;
 
     case 'Venus':
-      $contentImg.innerHTML = `<img src="img/venus.jpg" alt="Venus">`;
+      $contentImg.innerHTML = `<img src="img/venus.png" alt="Venus">`;
       break;
 
     case 'Luna':
-      $contentImg.innerHTML = `<img src="img/luna.jpg" alt="Luna">`;
+      $contentImg.innerHTML = `<img src="img/luna.png" alt="Luna">`;
       break;
 
     case 'Marte':
-      $contentImg.innerHTML = `<img src="img/marte.jpg" alt="Marte">`;
+      $contentImg.innerHTML = `<img src="img/marte.png" alt="Marte">`;
       break;
 
     case 'Júpiter':
-      $contentImg.innerHTML = `<img src="img/jupiter.jpg" alt="Júpiter">`;
+      $contentImg.innerHTML = `<img src="img/jupiter.png" alt="Júpiter">`;
       break;
 
     case 'Saturno':
-      $contentImg.innerHTML = `<img src="img/saturno.jpg" alt="Saturno">`;
+      $contentImg.innerHTML = `<img src="img/saturno.png" alt="Saturno">`;
       break;
 
     case 'Urano':
-      $contentImg.innerHTML = `<img src="img/urano.jpg" alt="Urano">`;
+      $contentImg.innerHTML = `<img src="img/urano.png" alt="Urano">`;
       break;
 
     case 'Neptuno':
-      $contentImg.innerHTML = `<img src="img/neptuno.jpg" alt="Neptuno">`;
+      $contentImg.innerHTML = `<img src="img/neptuno.png" alt="Neptuno">`;
       break;
 
     case 'Plutón':
-      $contentImg.innerHTML = `<img src="img/pluton.jpg" alt="Plutón">`;
+      $contentImg.innerHTML = `<img src="img/pluton.png" alt="Plutón">`;
       break;
 
     default:
-      $contentImg.innerHTML = `<img src="img/sol.jpg" alt="Sol">`;
+      $contentImg.innerHTML = `<img src="img/sol.png" alt="Sol">`;
       break;
   }
 }
