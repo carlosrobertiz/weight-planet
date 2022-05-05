@@ -20,5 +20,4 @@ Las validaciones son hechas con código nativo sin el uso de librerías externas
 <img width="400" src="./design/mobil.png" />
 
 ## Créditos
-
-Diseñado por Carlos Robertiz
+Creado por Carlos Robertiz
